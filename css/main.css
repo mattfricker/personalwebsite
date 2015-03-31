@@ -1,0 +1,346 @@
+
+
+/* Base Styles -------------------- */
+* {
+	box-sizing: border-box;
+}
+
+body {
+    height: 620px;
+    width: 100%;
+    font-family: 'Open Sans', sans-serif;
+    color: #fff;
+    letter-spacing: .02em;
+}
+
+
+.float-left{
+    float: left;
+}
+
+.float-right{
+    float: right;
+}
+
+.top-border-thin,
+.horizontal-borders-thin{
+    border-top: 1px solid white;
+}
+.border-bottom-thin,
+.horizontal-borders-thin{
+    border-bottom: 1px solid white;
+}
+
+.hidden{
+    display: none;
+}
+
+.text-white,
+a,
+a:hover,
+a:visited{
+    color: #FFF;
+}
+
+
+
+/* Main Styles -------------------- */
+
+
+#main-content{
+    width: 100%;
+    height: 80%;
+}
+
+
+#large-header{
+    background: hsl(254, 53%, 32%) url(../img/main-img.png) no-repeat right top;
+    background-size: cover;
+    font-family: 'Arvo', serif;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    box-shadow: inset 0 0 0 1000px hsla(254, 53%, 32%, .78);
+}
+
+#beliefs{
+    width: 25%;
+    position: relative;
+    top: 240px;
+    left: 70%;
+ }
+
+#beliefs p{
+    position: relative;
+    font-size: 1.8em;
+    width: 100%;
+    padding: 12px 0;
+}
+
+
+#beliefs p.out-of-sight{
+    top: -400px;
+}
+
+#information-box{
+    width: 60%;
+    position: absolute;
+    margin: 2% 0 0 2%;
+    height: 95%;
+    text-align: center;
+    background: hsla(254, 53%, 32%, .80);
+}
+
+#close-information-box{
+    background-color: transparent;
+    font-size: 1.1em;
+    border: none;
+    margin: 2px 2px 0 0;
+}
+
+#close-information-box:hover{
+    background-color: hsl(248, 53%, 58%);
+}
+
+#information-box h2{
+    padding: 10px 0 0 10px;
+    font-size: 2em;
+    width: 90%;
+    margin: auto auto 30px;
+}
+
+#information-box h3{
+    font-size: 1.33em;
+    margin-bottom: 7px;
+}
+
+.summary{
+    width: 50%;
+    margin: 0 3.33%;
+    line-height: 1.18em;
+}
+
+.summary p,
+.project-links li{
+   padding: 7px 0;
+}
+
+.project-links{
+    width: 40%;
+    margin-right: 3.33%;
+}
+
+.summary,
+.project-links{
+    height: 70%;
+    background: hsla(0, 0%, 100%, .03);
+    margin-top: 5px;
+    border-radius: .5em;
+}
+
+.project-links li{
+    font-size: .9em;
+}
+
+.project-links a{
+    color: #FFF;
+    line-height: 1.3em;
+}
+
+
+
+#secondary-content{
+    background: hsl(248, 53%, 58%);
+    height: 30%;
+}
+
+.more-info{
+    font-size: 1.5em;
+    width: 33.333%;
+    height: 100%;
+    text-align: center;
+}
+
+.more-info:nth-child(2){
+    background: hsl(248, 53%, 60%);
+}
+
+.more-info h2{
+    padding-top: 25px;
+}
+
+.more-info:hover{
+    background: hsl(248, 53%, 60%);
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.more-info:nth-child(2):hover{
+    background: hsl(248, 53%, 58%);
+}
+
+.more-info.information-box-color,
+.more-info.information-box-color:hover{
+    background: hsl(248, 53%, 68%);
+}
+
+/* Float Clearfix ------------------ */
+
+.group:after {
+  content: "";
+  display: table;
+  clear: both;
+ }
+
+
+/*Initial load screen*/
+
+.initial-load-screen{
+    background: hsl(248, 53%, 58%);
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 800px;
+    z-index: 4;
+}
+
+@keyframes rotate-forever {
+    0% {
+        -webkit-transform: rotate(0deg);
+        -moz-transform: rotate(0deg);
+        -ms-transform: rotate(0deg);
+        -o-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+    100% {
+        -webkit-transform: rotate(360deg);
+        -moz-transform: rotate(360deg);
+        -ms-transform: rotate(360deg);
+        -o-transform: rotate(360deg);
+        transform: rotate(360deg);
+    }
+}
+.loading-spinner {
+    -webkit-animation-duration: 0.75s;
+    -moz-animation-duration: 0.75s;
+    animation-duration: 0.75s;
+    -webkit-animation-iteration-count: infinite;
+    -moz-animation-iteration-count: infinite;
+    animation-iteration-count: infinite;
+    -webkit-animation-name: rotate-forever;
+    -moz-animation-name: rotate-forever;
+    animation-name: rotate-forever;
+    -webkit-animation-timing-function: linear;
+    -moz-animation-timing-function: linear;
+    animation-timing-function: linear;
+    height: 45px;
+    width: 45px;
+    border: 8px solid hsla(0, 0%, 100%, .7);
+    border-right-color: transparent;
+    border-radius: 50%;
+    display: inline-block;
+}
+
+.loading-spinner {
+    position: absolute;
+    top: 20%;
+    right: 0;
+    bottom: 0;
+    left: 50%;
+}
+
+/* Media Queries -------------------- */
+
+@media (max-width: 960px) {
+    #beliefs{
+        top: 280px;
+    }
+    #beliefs p{
+        font-size: 1.4em;
+    }
+
+    .more-info {
+        font-size: 1.2em;
+    }
+}
+
+
+@media (max-width: 768px) {
+    body{
+        height: 1100px;
+    }
+
+    #large-header{
+        background-image: url('../img/mobile-img.png');
+    }
+
+    #beliefs p{
+        font-size: 1.2em;
+    }
+
+    #information-box{
+        width: 98%;
+        float: none;
+        margin: 15px 1% 0;
+        border: 2px solid #ffffff;
+    }
+
+    #information-box h1,
+    #information-box h2,
+    #information-box h3{
+        font-size: 1.25em;
+    }
+
+    .summary{
+        padding-bottom: 50px;
+    }
+
+    .summary,
+    .project-links{
+        width: 95%;
+        margin: auto;
+        background: transparent;
+        float: none;
+    }
+
+    .more-info{
+        width: 100%;
+        height: 120px;
+        float: none;
+    }
+
+    #secondary-content{
+        height: 360px;
+    }
+
+    #beliefs.mobile-hide{
+        display: none;
+    }
+
+    #beliefs{
+        width: 35%;
+        left: 55%;
+    }
+
+    #close-information-box{
+        width: 100%;
+        margin: 3px 0 20px 0;
+        padding-right: 10px;
+        text-align: right;
+    }
+
+    .loading-spinner {
+        left: 45%;
+    }
+}
+
+@media (max-width: 480px) {
+    #beliefs{
+        width: 50%;
+        left: 42%;
+    }
+
+}
+
+
+
