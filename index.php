@@ -35,7 +35,7 @@
         </div>
     </section>
 
-    <script src="js/jquery.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
     <script src="js/jquery.easing.1.3.js"></script>
     <script src="js/homepage.js"></script>
 
