@@ -1,0 +1,17 @@
+$background: hsl(254, 53%, 32%);
+$secondary-color: hsl(248, 53%, 58%);
+$text-color: #fff;
+$em: 16px;
+
+//Borders
+$thin-border: 1px solid white;
+
+//Homepage
+$main-pic: url(../img/main-img.png);
+$portrait-image: url('../img/mobile-img.png');
+
+//Loading spinner
+$spinner-color: #fff;
+$spinner-size: 45px;
+$spinner-speed: 0.75s;
+$spinner-thickness: 6px; // Odd numbers created a "wobble" effect.

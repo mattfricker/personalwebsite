@@ -1,0 +1,24 @@
+//Bourbon
+@import "bourbon/bourbon";
+
+//Reset css
+
+@import "_reset.scss";
+
+
+//Definitions
+
+@import "_variables.scss";
+
+@import "_mixins.scss";
+
+//Global Stules
+
+@import "_globals.scss";
+
+
+//Page Specifics
+
+@import "_loadscreen.scss";
+
+@import "pages/_homepage.scss";

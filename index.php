@@ -4,8 +4,7 @@
     <meta charset="UTF-8">
     <title>Matt Fricker</title>
     <link rel='stylesheet' href='http://fonts.googleapis.com/css?family=Open+Sans:400,700,300%7CArvo:400,700'>
-    <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/styles.css">
     <meta name="viewport" content="width=device-width">
   </head>
   
@@ -13,7 +12,7 @@
     <div id="main-content">
         <div id="large-header">
             <section class="float-left group hidden" id="information-box">
-                <button class='float-right text-white' id="close-information-box">Close</button>
+                <button class='float-right' id="close-information-box">Close</button>
             </section>
             <div id="beliefs">
                 <p class="border-bottom-thin">Do cool stuff.</p>

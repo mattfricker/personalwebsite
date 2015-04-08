@@ -34,7 +34,7 @@ var homePage = {
                     $(this).prev().animate({
                         top: '0px'
                     }, 900, 'easeOutBounce', function(){
-                        $(this).addClass('top-border-thin')
+                        $(this).addClass('border-top-thin')
                             .prev().animate({
                                 top: '0px'
                             }, 1100, 'easeOutCubic')
@@ -54,8 +54,8 @@ jQuery(document).ready(function() {
     homePage.clickerLinks.attr('href','#main-content');
 
     homePage.allClickers.on('click', function(){
-        homePage.allClickers.removeClass('information-box-color');
-        $(this).addClass('information-box-color');
+        homePage.allClickers.removeClass('active-box');
+        $(this).addClass('active-box');
         var clickedButton = $(this).attr('data-info');
         homePage.mainInfoBox.removeClass('hidden').find('.more-infos').remove();
         homePage.headlineList.parent().addClass('mobile-hide');
@@ -72,6 +72,7 @@ jQuery(document).ready(function() {
     homePage.closeMainBox.on('click', function(){
         homePage.mainInfoBox.addClass('hidden');
         homePage.allClickers.removeClass('information-box-color');
+        homePage.headlineList.parent().removeClass('mobile-hide');
     });
 
 });

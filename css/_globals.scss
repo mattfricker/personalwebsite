@@ -1,0 +1,44 @@
+/* Base Styles -------------------- */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  height: 620px;
+  background-color: $background;
+  width: 100%;
+  font-family: 'Open Sans', sans-serif;
+  color: $text-color;
+  letter-spacing: $em * 0.02;
+  @media (max-width: 768px) {
+      height: 1100px;
+  }
+}
+
+.border-top-thin, {
+  border-top: $thin-border;
+}
+.border-bottom-thin, {
+  border-bottom: $thin-border;
+}
+
+.horizontal-borders-thin{
+  @extend .border-top-thin;
+  @extend .border-bottom-thin;
+}
+
+.hidden{
+  display: none;
+}
+
+a,
+a:hover,
+a:visited{
+  color: $text-color;
+}
+
+.group:after {
+  content: "";
+  display: table;
+  clear: both;
+}
